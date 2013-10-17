@@ -3,7 +3,7 @@ require 'test_helper'
 describe TicTacToe do
 	describe "X wins horizontally" do
 		subject do
-			TicTacToe.new([["X", "X", "X"],
+			TicTacToe.new(TicTacToe.new([["X", "X", "X"],
                     			             ["O", "O", "_"],
                     				     ["O", "_","_"]])
 		end
@@ -14,7 +14,7 @@ describe TicTacToe do
 	
 	describe "X wins vertically" do
 		subject do
-			TicTacToe.new([["X", "O", "O"],
+			TicTacToe.new(TicTacToe.new([["X", "O", "O"],
                     			             ["X", "O", "_"],
                     				     ["X", "_","_"]])
 		end
