@@ -20,7 +20,7 @@ describe TicTacToe do
       subject.winner.must_equal "O"
     end
   end
- 
+
   it "must find column winner" do
     tictactoe = TicTacToe.new([["0", "0", "X"],
                                ["-", "-", "X"],
