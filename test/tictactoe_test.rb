@@ -6,7 +6,7 @@ def setup
   @tttHorizontal = TicTacToe.new([["X", "X", "X"],
                                   ["O", "O", "_"],
                                   ["O", "_", "_"]])
-  @tttDiagonal = TicTacToe.new([["X" "O", "_"],
+  @tttDiagonal = TicTacToe.new([["X", "O", "_"],
                                 ["O", "X", "O"],
                                 ["_", "_", "X"]])
   @tttVertical = TicTacToe.new([["X", "O", "O"],
