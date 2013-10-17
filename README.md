@@ -13,9 +13,11 @@ Usage
 # bundle install
 # irb -I lib
 
+require 'tictactoe'
+
 ttt = TicTacToe.new([["X", "X", "X"],
                      ["O", "O", "_"],
-                     ["O", "_","_"]]
+                     ["O", "_","_"]])
 
 ttt.winner # => "X"
 ```
