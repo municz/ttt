@@ -10,13 +10,17 @@ describe TicTacToe do
     tictactoe.winner.must_equal "O"
   end
 
-  it "must find row winner" do
-    tictactoe = TicTacToe.new([["O", "O", "O"],
-                               ["X", "X", "-"],
-                               ["X", "-", "-"]])
-    tictactoe.winner.must_equal "O"
+  describe "O wins horizontally" do
+    subject do
+      TicTacToe.new([["O", "O", "O"],
+                     ["X", "X", "-"],
+                     ["X", "-", "-"]])
+    end
+    it "O must be winner" do
+      subject.winner.must_equal "O"
+    end
   end
-
+ 
   it "must find column winner" do
     tictactoe = TicTacToe.new([["0", "0", "X"],
                                ["-", "-", "X"],
