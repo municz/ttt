@@ -23,7 +23,7 @@ class TicTacToe
   end
 
   def in_diag?(config, player)
-    diag_indexes = [(0...size).zip((0...size))]
+    diag_indexes = [(0...size).to_a.zip((0...size).to_a)]
     diag_indexes << (0...size).to_a.reverse.zip((0...size))
     diagonals = diag_indexes.map {|indexes| indexes.map { |x, y| config[x][y] } }
     in_row?(diagonals, player)
