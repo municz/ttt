@@ -55,6 +55,17 @@ describe TicTacToe do
 			subject.winner.must_equal "X"
 		end
 	end
+
+		describe "X wins diagonally" do
+		subject do
+			TicTacToe.new([["_","O","X"],
+		  			["O","X","O"],
+					["X","_","_"]])
+		end
+		it "X must be winner" do
+			subject.winner.must_equal "X"
+		end
+	end
 end
 
 
