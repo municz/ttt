@@ -56,7 +56,7 @@ describe TicTacToe do
 		end
 	end
 
-		describe "X wins diagonally" do
+		describe "X wins diagonally this time" do
 		subject do
 			TicTacToe.new([["_","O","X"],
 		  			["O","X","O"],
